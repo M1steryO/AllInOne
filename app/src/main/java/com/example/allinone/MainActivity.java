@@ -13,24 +13,26 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    private RecyclerView videos_list;
+    private YoutubeVideosAdapter yt_videos_adapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-        RecyclerView videos_list = findViewById(R.id.youtube_videos_list);
+        videos_list = findViewById(R.id.youtube_videos_list);
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         videos_list.setLayoutManager(layoutManager);
 
         videos_list.setHasFixedSize(true);
 
+        yt_videos_adapter = new YoutubeVideosAdapter(10);
+        videos_list.setAdapter(yt_videos_adapter);
+
     }
-
-
-
-
 
 
 }
