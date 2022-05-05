@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardBackgroundColor="#201D33"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:paddingVertical="10dp">
+
+        <LinearLayout
+            android:id="@+id/profilelayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/picturetv"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar" />
+
+
+            <TextView
+                android:id="@+id/reddit_post_subreddit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="/apple"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/reddit_post_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom"
+                android:gravity="end"
+                android:text="2022-05-01"
+                android:textColor="#7F7A7A"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/reddit_post_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="10dp"
+            android:maxLength="200"
+            android:text="sdhgjfkjshfkjsdhfhskjfhskjfhskjhfishfishfiuhsiufhsiufhsiuhfiushfishifushiufhsiufhsiuhfiusfiushfiushifushiufsdhgjfkjshfkjsdhfhskjfhskjfhskjhfishfishfiuhsiufhsiufhsiuhfiushfishifushiufhsiufhsiuhfiusfiushfiushifushiufsdhgjfkjshfkjsdhfhskjfhskjfhskjhfishfishfiuhsiufhsiufhsiuhfiushfishifushiufhsiufhsiuhfiusfiushfiushifushiuf"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/reddit_post_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/white"
+            android:src="@drawable/avatar"
+            android:visibility="visible" />
+        <!--        <VideoView-->
+        <!--            android:id="@+id/reddit_post_video"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:visibility="gone"/>-->
+
+    </LinearLayout>
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent"-->
+    <!--            android:gravity="center"-->
+    <!--            android:orientation="horizontal"-->
+    <!--            android:background="#2A2D4C"-->
+    <!--            >-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/like"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:autoLink="all"-->
+    <!--                android:background="@android:color/transparent"-->
+
+    <!--                android:drawableStart="@mipmap/ic_like"-->
+
+    <!--                android:padding="5dp"-->
+    <!--                android:text="Like" />-->
+    <!--            <View-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:background="@color/white"-->
+    <!--                android:layout_width="1dp">-->
+
+    <!--            </View>-->
+
+    <!--            <Button-->
+    <!--                android:id="@+id/comment"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"-->
+    <!--                android:layout_weight="1"-->
+    <!--                android:autoLink="all"-->
+    <!--                android:background="@android:color/transparent"-->
+    <!--                android:padding="5dp"-->
+    <!--                android:text="COMMENT" />-->
+
+    <!--        </LinearLayout>-->
+
+
+</androidx.cardview.widget.CardView>
