@@ -3,24 +3,49 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable-v24/button_background.xml" value="0.3457236842105263" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20657894736842106" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable-v24/white_background.xml" value="0.3457236842105263" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/app_background.xml" value="0.32708333333333334" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/bg_bottom_nav.xml" value="0.2075657894736842" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/bg_bottom_nav_item.xml" value="0.2075657894736842" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/bg_services.xml" value="0.3457236842105263" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/bg_sevices.xml" value="0.3457236842105263" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/button1_bg.xml" value="0.3414554905782976" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/custom_btn_radio.xml" value="0.3457236842105263" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/custom_reddit_btn.xml" value="0.28848684210526315" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/custom_youtoube_btn.xml" value="0.3457236842105263" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/empty_tall_divider.xml" value="0.20657894736842106" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.20657894736842106" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/ic_filter.xml" value="0.3414554905782976" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/layout_bg.xml" value="0.5473958333333333" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/null_radio_button.xml" value="0.3457236842105263" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/drawable/youtube_item_bg.xml" value="0.32708333333333334" />
-        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/activity_login.xml" value="0.3241120218579235" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/activity_main1.xml" value="0.19407894736842105" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/activity_menu_services.xml" value="0.3067708333333333" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/fragment_login.xml" value="0.33289473684210524" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/fragment_profile.xml" value="0.25" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/fragment_register.xml" value="0.33" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/fragment_search.xml" value="0.33" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/item.xml" value="0.3067708333333333" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/menu_services.xml" value="0.25731584258324924" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/menu_servises_item.xml" value="0.67" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/popular_posts_layput.xml" value="0.24829234972677597" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/profile.xml" value="0.1" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/reddit_post_item.xml" value="0.33" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/reddit_posts_list.xml" value="0.33289473684210524" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/search_filter_layout.xml" value="0.26644736842105265" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/search_sort_layout.xml" value="0.3891891891891892" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/youtube_video_item.xml" value="0.3067708333333333" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/layout/youtube_video_list.xml" value="0.5270833333333333" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/menu/bottom_nav.xml" value="0.21743421052631579" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
         <entry key="..\:/Users/Home/AllInOne/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20657894736842106" />
+        <entry key="..\:/Users/Home/AllInOne/app/src/main/res/xml/root_preferences.xml" value="0.33289473684210524" />
       </map>
     </option>
   </component>

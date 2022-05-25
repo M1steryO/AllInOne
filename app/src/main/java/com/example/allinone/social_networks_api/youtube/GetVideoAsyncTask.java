@@ -11,9 +11,11 @@ import com.example.allinone.adapters.YoutubeVideosAdapter;
 
 import org.json.JSONArray;
 
-public class GetVideoAsyncTask extends AsyncTask<String, String, JSONArray> {
+import java.util.ArrayList;
 
-    private JSONArray videos = new JSONArray();
+public class GetVideoAsyncTask extends AsyncTask<String, String, ArrayList<YoutubeVideo>> {
+
+    private ArrayList<YoutubeVideo> videos = new ArrayList<YoutubeVideo>();
     private RecyclerView videos_list;
     private LinearLayoutManager layoutManager;
     Lifecycle lifecycle;
@@ -24,14 +26,16 @@ public class GetVideoAsyncTask extends AsyncTask<String, String, JSONArray> {
     }
 
     @Override
-    protected JSONArray doInBackground(String... strings) {
-
-        videos = YouTubeApi.get_videos(strings[0]);
+    protected ArrayList<YoutubeVideo> doInBackground(String... strings) {
+        if (strings[2].equals("true"))
+            videos = YouTubeApi.get_trends_videos();
+        else
+            videos = YouTubeApi.get_videos(strings[0], strings[1]);
         return videos;
     }
 
     @Override
-    protected void onPostExecute(JSONArray result) {
+    protected void onPostExecute(ArrayList<YoutubeVideo> result) {
         super.onPostExecute(result);
         if (result != null) {
             videos = result;
@@ -45,7 +49,7 @@ public class GetVideoAsyncTask extends AsyncTask<String, String, JSONArray> {
         videos_list.setHasFixedSize(true);
 
 
-        YoutubeVideosAdapter yt_videos_adapter = new YoutubeVideosAdapter(videos.length(), videos, lifecycle);
+        YoutubeVideosAdapter yt_videos_adapter = new YoutubeVideosAdapter(videos.size(), videos, lifecycle);
 
         videos_list.setAdapter(yt_videos_adapter);
     }

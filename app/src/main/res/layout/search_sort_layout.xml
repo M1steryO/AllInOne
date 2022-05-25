@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BgColor"
+    android:padding="10dp"
+    tools:context=".fragments.SortDialogFragment">
+
+    <RadioGroup
+        android:id="@+id/search_sorts_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/BgColor"
+        android:checkedButton="@+id/popular_sort"
+        android:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/popular_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:buttonTint="#686dce"
+            android:text="По популярности"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/date_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:buttonTint="#686dce"
+            android:text="По дате"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/reposts_sort"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:buttonTint="#686dce"
+            android:text="По репостам"
+            android:textColor="@color/white" />
+
+
+    </RadioGroup>
+</LinearLayout>

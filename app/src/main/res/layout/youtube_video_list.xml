@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yt_videos_list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginTop="40dp"
@@ -8,18 +9,6 @@
     android:layout_marginBottom="100dp">
 
 
-    <TextView
-        android:id="@+id/yt_list_title"
-        android:layout_width="match_parent"
-        android:layout_height="20dp"
-        android:text="Видео по запросу - ALLINONE"
-        android:textColor="@color/white"
-        android:textSize="13sp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:layout_marginBottom="10dp">
-
-
-    </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/youtube_videos_list"

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "461529738255",
+    "firebase_url": "https://allinone-b95e0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "allinone-b95e0",
+    "storage_bucket": "allinone-b95e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:461529738255:android:c85f92cffafd289c8e077a",
+        "android_client_info": {
+          "package_name": "com.example.allinone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "461529738255-cs4flhbhcr2q6tnqa8n821sgitkila21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP7qOpoNTfaGXs9L5kLsDlZFzGtglHvkI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "461529738255-cs4flhbhcr2q6tnqa8n821sgitkila21.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

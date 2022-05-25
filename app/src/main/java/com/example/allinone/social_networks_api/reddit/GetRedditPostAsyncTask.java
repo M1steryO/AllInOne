@@ -1,7 +1,9 @@
 package com.example.allinone.social_networks_api.reddit;
 
 import android.os.AsyncTask;
+import android.os.Build;
 
+import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -23,10 +25,11 @@ public class GetRedditPostAsyncTask extends AsyncTask<String, String, ArrayList<
         this.posts_list = posts_list;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected ArrayList<RedditPost> doInBackground(String... strings) {
 
-        posts = RedditApi.get_posts(strings[0]);
+        posts = RedditApi.get_posts(strings[0], strings[1]);
         return posts;
 
     }

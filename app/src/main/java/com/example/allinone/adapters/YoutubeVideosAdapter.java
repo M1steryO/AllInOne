@@ -8,6 +8,7 @@ import androidx.lifecycle.Lifecycle;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.allinone.R;
+import com.example.allinone.social_networks_api.youtube.YoutubeVideo;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
@@ -15,18 +16,21 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 import org.json.JSONArray;
 import org.json.JSONException;
 
+import java.util.ArrayList;
+
 
 public class YoutubeVideosAdapter extends RecyclerView.Adapter<YoutubeVideosAdapter.ViewHolder> {
 
     private final int numberVideos;
-    JSONArray videos;
+    ArrayList<YoutubeVideo> videos;
     private Lifecycle lifecycle;
 
 
-    public YoutubeVideosAdapter(int NumberOfItems, JSONArray getting_videos, Lifecycle lifecycle) {
+    public YoutubeVideosAdapter(int NumberOfItems, ArrayList<YoutubeVideo> getting_videos, Lifecycle lifecycle) {
         numberVideos = NumberOfItems;
         videos = getting_videos;
         this.lifecycle = lifecycle;
+
 
     }
 
@@ -42,11 +46,8 @@ public class YoutubeVideosAdapter extends RecyclerView.Adapter<YoutubeVideosAdap
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        try {
-            holder.cueVideo((String) videos.getJSONObject(position).getJSONObject("id").get("videoId"));
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
+
+        holder.cueVideo(videos.get(position).videoId);
 
 
     }
@@ -87,7 +88,6 @@ public class YoutubeVideosAdapter extends RecyclerView.Adapter<YoutubeVideosAdap
             youTubePlayer.cueVideo(videoId, 0);
         }
     }
-
 
 
 }

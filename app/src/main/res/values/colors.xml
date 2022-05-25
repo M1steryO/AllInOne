@@ -7,5 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="BgColor">#191924</color>
+    <color name="Warning">#D00404</color>
+    <color name="colorTextInputBackground">#F7F7F7</color>
+
 
 </resources>
