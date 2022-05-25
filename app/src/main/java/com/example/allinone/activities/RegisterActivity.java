@@ -122,7 +122,7 @@ public class RegisterActivity extends AppCompatActivity {
                         } else {
 
                             // account creation failed
-                            showErrorMessage("Ошибка при создании аккаунта \n" + task.getException().getMessage());
+                            showErrorMessage("Ошибка при создании аккаунта \n" + task.getException().getLocalizedMessage());
 
 
                         }

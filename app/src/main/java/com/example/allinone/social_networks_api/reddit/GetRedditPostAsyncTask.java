@@ -17,7 +17,7 @@ public class GetRedditPostAsyncTask extends AsyncTask<String, String, ArrayList<
 
     private final RecyclerView posts_list;
     private ArrayList<RedditPost> posts = new ArrayList<RedditPost>();
-    private RedditPostsAdapter reddit_posts_adapter;
+    public RedditPostsAdapter reddit_posts_adapter;
     private LinearLayoutManager layoutManager;
 
 

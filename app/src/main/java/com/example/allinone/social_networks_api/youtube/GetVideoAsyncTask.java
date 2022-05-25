@@ -18,7 +18,9 @@ public class GetVideoAsyncTask extends AsyncTask<String, String, ArrayList<Youtu
     private ArrayList<YoutubeVideo> videos = new ArrayList<YoutubeVideo>();
     private RecyclerView videos_list;
     private LinearLayoutManager layoutManager;
-    Lifecycle lifecycle;
+    private Lifecycle lifecycle;
+
+    public YoutubeVideosAdapter yt_videos_adapter;
 
     public GetVideoAsyncTask(RecyclerView videos_list, Lifecycle lifecycle) {
         this.videos_list = videos_list;
@@ -49,7 +51,7 @@ public class GetVideoAsyncTask extends AsyncTask<String, String, ArrayList<Youtu
         videos_list.setHasFixedSize(true);
 
 
-        YoutubeVideosAdapter yt_videos_adapter = new YoutubeVideosAdapter(videos.size(), videos, lifecycle);
+        yt_videos_adapter = new YoutubeVideosAdapter(videos.size(), videos, lifecycle);
 
         videos_list.setAdapter(yt_videos_adapter);
     }
