@@ -61,8 +61,6 @@ public class MainActivity extends AppCompatActivity {
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         boolean is_login = prefs.getBoolean("Islogin", false);
-        System.out.println(213131);
-        ;
 
         if (!is_login) {   // condition true means user is already logins
             Intent login_activity = new Intent(this, LoginActivity.class);

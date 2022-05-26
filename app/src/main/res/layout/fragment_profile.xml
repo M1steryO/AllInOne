@@ -204,7 +204,7 @@
             </LinearLayout>
 
             <Button
-
+                android:id="@+id/sign_out_button"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="50dp"
@@ -212,14 +212,16 @@
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/montserrat_semibold"
                 android:gravity="center"
-                android:text="Edit Profile"
+                android:text="Выйти"
                 android:textColor="#ffffff"
                 android:textSize="18sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="@+id/linearLayout"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+                app:layout_constraintVertical_bias="0.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

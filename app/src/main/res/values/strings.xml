@@ -16,17 +16,17 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="hint_username">Username</string>
-    <string name="hint_password">Password</string>
-    <string name="button_sign_in">Sign in</string>
-    <string name="button_sign_up">Sign up</string>
+    <string name="hint_username">Никнейм</string>
+    <string name="hint_password">Пароль</string>
+    <string name="button_sign_in">Войти</string>
+    <string name="button_sign_up">Зарегистрироваться</string>
     <string name="button_send">Send</string>
     <string name="text_forgot_password">Forgot password?</string>
-    <string name="text_signin_message">Hello, sign in to your account</string>
+    <string name="text_signin_message">Привет, войди в свой аккаунт</string>
     <string name="text_signin_social_media">Or Sign in using social media</string>
     <string name="text_signup_social_media">Or Sign up using social media</string>
-    <string name="text_signin_signup">Don\'t have an account? <b>Sign up</b></string>
-    <string name="text_signup_terms">By signing up, you agree to our <b>terms and conditions</b></string>
+    <string name="text_signin_signup">У вас нет аккаунта? <b>Зарегистрируйтесь</b> </string>
+    <string name="text_signup_terms">Регистрируясь, вы принимаете все <b>условия и соглашения</b></string>
     <string name="text_signup_message">Hello, let\'s set up your account</string>
 
     <string name="text_forgot_password_title">Forgot password? No worries</string>
@@ -34,6 +34,6 @@
 
     <string name="hint_email">Email</string>
     <string name="hint_phone">Phone</string>
-    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="hint_confirm_password">Подтвердите пароль</string>
 
 </resources>

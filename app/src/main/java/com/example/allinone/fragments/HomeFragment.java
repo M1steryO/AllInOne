@@ -33,9 +33,7 @@ import org.w3c.dom.Text;
 
 
 public class HomeFragment extends Fragment {
-    private RecyclerView reddit_posts_list;
-    private RecyclerView youtube_videos_list;
-    private ViewFlipper vf;
+
 
     public HomeFragment() {
         // Required empty public constructor
@@ -55,15 +53,8 @@ public class HomeFragment extends Fragment {
 
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        vf = view.findViewById(R.id.vf);
-        vf.setDisplayedChild(0);
 
-        reddit_posts_list = view.findViewById(R.id.reddit_posts_list);
 
-//        GetRedditPostAsyncTask get_reddit_post = new GetRedditPostAsyncTask(reddit_posts_list);
-//        get_reddit_post.execute("", "popular");
-
-// Attach adapter to recyclerView.
         // Получаем ViewPager и устанавливаем в него адаптер
         ViewPager viewPager = view.findViewById(R.id.viewpager);
         viewPager.setAdapter(
@@ -74,11 +65,9 @@ public class HomeFragment extends Fragment {
         tabLayout.setupWithViewPager(viewPager);
 
 
-
         return view;
 
     }
-
 
 
 }

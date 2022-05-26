@@ -4,37 +4,76 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
 
-            android:gravity="center"
-            android:src="@drawable/youtube_icon">
 
-        </ImageView>
-
-        <TextView
-            android:textColor="@color/white"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="Youtube"
-            android:textSize="20sp">
+            android:orientation="horizontal">
 
-        </TextView>
-    </LinearLayout>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:gravity="center"
+                android:src="@drawable/youtube_icon">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Youtube"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
 
 
-    <include
-        android:layout_marginTop="10dp"
-        layout="@layout/youtube_video_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <include
+            layout="@layout/youtube_video_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+
+                android:gravity="center"
+                android:src="@drawable/reddit_icon">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Reddit"
+                android:textColor="@color/white"
+                android:textSize="20sp">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/reddit_posts_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
 </LinearLayout>

@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.allinone.R;
+import com.example.allinone.social_networks_api.reddit.GetRedditPostAsyncTask;
 import com.example.allinone.social_networks_api.youtube.GetVideoAsyncTask;
 
 public class PageFragment extends Fragment {
@@ -44,6 +45,9 @@ public class PageFragment extends Fragment {
             RecyclerView youtube_videos_list = view.findViewById(R.id.youtube_videos_list);
             GetVideoAsyncTask get_videos = new GetVideoAsyncTask(youtube_videos_list, getLifecycle());
             get_videos.execute("", "popular", "true");
+            RecyclerView reddit_posts_list = view.findViewById(R.id.reddit_posts_list);
+            GetRedditPostAsyncTask get_reddit_post = new GetRedditPostAsyncTask(reddit_posts_list);
+            get_reddit_post.execute("", "popular", "true");
         } else {
             view = inflater.inflate(R.layout.favourite_posts_layout, container, false);
 

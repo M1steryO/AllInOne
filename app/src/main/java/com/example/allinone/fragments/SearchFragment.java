@@ -94,7 +94,7 @@ public class SearchFragment extends Fragment {
                         reddit_posts_btn.setChecked(true);
                         vf.setDisplayedChild(0);
                         GetRedditPostAsyncTask get_reddit_post = new GetRedditPostAsyncTask(reddit_posts_list);
-                        get_reddit_post.execute(req, currentSort);
+                        get_reddit_post.execute(req, currentSort, "false");
                         GetVideoAsyncTask get_videos = new GetVideoAsyncTask(youtube_videos_list, getLifecycle());
                         get_videos.execute(req, currentSort, "false");
 
@@ -157,9 +157,9 @@ public class SearchFragment extends Fragment {
     public void sort_items(String s) {
         currentSort = s;
         GetRedditPostAsyncTask get_reddit_post = new GetRedditPostAsyncTask(reddit_posts_list);
-        get_reddit_post.execute(search_text.getText().toString(), currentSort);
+        get_reddit_post.execute(search_text.getText().toString(), currentSort, "false");
         GetVideoAsyncTask get_videos = new GetVideoAsyncTask(youtube_videos_list, getLifecycle());
-        get_videos.execute(search_text.getText().toString(), currentSort);
+        get_videos.execute(search_text.getText().toString(), currentSort,"false");
     }
 
     private void showWarningMessage(String message) {

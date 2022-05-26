@@ -341,13 +341,6 @@
                         android:button="@null"
                         android:gravity="end" />
 
-                    <RadioButton
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_marginEnd="50dp"
-                        android:background="@drawable/vk_icon"
-                        android:button="@null"
-                        android:gravity="end" />
 
 
                 </RadioGroup>

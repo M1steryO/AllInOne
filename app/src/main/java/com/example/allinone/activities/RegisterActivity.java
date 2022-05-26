@@ -35,10 +35,7 @@ import com.pranavpandey.android.dynamic.toasts.DynamicToast;
 public class RegisterActivity extends AppCompatActivity {
 
 
-    ImageView ImgUserPhoto;
-    static int PReqCode = 1;
-    static int REQUESCODE = 1;
-    Uri pickedImgUri;
+
 
     private EditText userEmail, userPassword, userConfirmedPassword, userName;
     private Button regBtn;

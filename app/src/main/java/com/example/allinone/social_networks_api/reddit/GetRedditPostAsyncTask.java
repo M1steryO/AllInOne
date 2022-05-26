@@ -1,5 +1,6 @@
 package com.example.allinone.social_networks_api.reddit;
 
+import android.annotation.SuppressLint;
 import android.os.AsyncTask;
 import android.os.Build;
 
@@ -12,24 +13,27 @@ import com.example.allinone.adapters.YoutubeVideosAdapter;
 
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class GetRedditPostAsyncTask extends AsyncTask<String, String, ArrayList<RedditPost>> {
 
+    @SuppressLint("StaticFieldLeak")
     private final RecyclerView posts_list;
     private ArrayList<RedditPost> posts = new ArrayList<RedditPost>();
-    public RedditPostsAdapter reddit_posts_adapter;
-    private LinearLayoutManager layoutManager;
 
 
     public GetRedditPostAsyncTask(RecyclerView posts_list) {
         this.posts_list = posts_list;
     }
 
+
     @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected ArrayList<RedditPost> doInBackground(String... strings) {
-
-        posts = RedditApi.get_posts(strings[0], strings[1]);
+        if (Objects.equals(strings[2], "true"))
+            posts = RedditApi.get_trends_posts();
+        else
+            posts = RedditApi.get_posts(strings[0], strings[1]);
         return posts;
 
     }
@@ -45,12 +49,12 @@ public class GetRedditPostAsyncTask extends AsyncTask<String, String, ArrayList<
         }
 
 
-        layoutManager = new LinearLayoutManager(posts_list.getContext(), LinearLayoutManager.HORIZONTAL, false);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(posts_list.getContext(), LinearLayoutManager.HORIZONTAL, false);
         posts_list.setLayoutManager(layoutManager);
         posts_list.setHasFixedSize(true);
 
 
-        reddit_posts_adapter = new RedditPostsAdapter(posts.size(), posts);
+        RedditPostsAdapter reddit_posts_adapter = new RedditPostsAdapter(posts.size(), posts);
 
         posts_list.setAdapter(reddit_posts_adapter);
     }
